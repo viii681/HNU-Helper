@@ -1,0 +1,41 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8788,
+    "threads": 8,
+    "static_dir": "../frontend/dist",
+    "serve_static": true,
+    "cors_allowed_origin": "",
+    "trust_proxy_headers": false
+  },
+  "security": {
+    "master_key_file": "./data/master.key",
+    "session_ttl_days": 365,
+    "admin_stats_key": "",
+    "rate_limit_login_per_min": 20,
+    "rate_limit_api_per_min": 240
+  },
+  "database": {
+    "sqlite_path": "./data/hnutong.db"
+  },
+  "logging": {
+    "log_file": "./data/hnutong.log",
+    "max_bytes": 10485760,
+    "max_files": 5,
+    "level": "info"
+  },
+  "hnu": {
+    "enable_demo_account": true,
+    "jwxt_base_url": "https://jxgl.hainanu.edu.cn",
+    "cas_login_url": "https://authserver.hainanu.edu.cn/authserver/login",
+    "ehall_base_url": "https://ehall.hainanu.edu.cn",
+    "allowed_ticket_domains": [
+      "hainanu.edu.cn"
+    ],
+    "allowed_notice_domains": [
+      "hainanu.edu.cn"
+    ],
+    "notice_ttl_seconds": 1800,
+    "polite_delay_ms": 120
+  }
+}

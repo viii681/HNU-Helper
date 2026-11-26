@@ -1,0 +1,26 @@
+name: 功能建议
+description: 提出海南大学校园服务新功能、学习平台适配器或体验改进建议
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 场景与痛点
+      placeholder: "例如：在海甸/儋州/三亚崖州湾校区使用过程中，希望解决什么问题？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望方案
+      placeholder: "描述你期望的功能形态或交互方式"
+    validations:
+      required: true
+  - type: checkboxes
+    id: noncommercial
+    attributes:
+      label: 开源与非商业确认
+      options:
+        - label: 我理解本项目为纯公益非商业开源项目，不接受任何商业广告或收费变现类需求。
+          required: true

@@ -1,0 +1,17 @@
+{
+  "name": "海大通 · 海南大学校园一体化系统",
+  "short_name": "海大通",
+  "description": "面向海南大学学生的课表、强智教务、学习待办与校园生活服务平台",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F2F7",
+  "theme_color": "#007AFF",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

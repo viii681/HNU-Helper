@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞私密报告 (Security Policy)
+    url: https://github.com/viii681/HNU-Helper/security
+    about: 如发现加密缺陷、凭据泄露或 SSRF 漏洞，请勿公开提交 Issue，请先阅读 SECURITY.md。

@@ -1,0 +1,33 @@
+[Unit]
+Description=HnuTong (海大通) Hainan University Campus All-in-One C++20 Server
+Documentation=file:///opt/hnutong/deploy/DEPLOY_LINUX.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=hnutong
+Group=hnutong
+WorkingDirectory=/opt/hnutong/backend
+ExecStart=/opt/hnutong/backend/build/hnutong_server -c /opt/hnutong/backend/config/config.json
+Restart=always
+RestartSec=3
+TimeoutStopSec=15
+KillSignal=SIGTERM
+
+# 文件描述符与并发上限
+LimitNOFILE=65535
+
+# Systemd 进程级安全加固沙盒
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/hnutong/backend/data /var/log/hnutong
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=hnutong
+
+[Install]
+WantedBy=multi-user.target

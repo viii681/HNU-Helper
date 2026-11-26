@@ -1,0 +1,51 @@
+# C++ Build artifacts
+backend/build/
+backend/build_*/
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+*.pdb
+
+# Runtime data, SQLite databases, encryption keys & local configs (NEVER commit!)
+backend/data/
+backend/data_*/
+data/
+logs/
+backend/config/config.json
+*.local.json
+.env
+.env.*
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-*
+master.key
+master.key.*
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+*.bak
+*.dump
+*.sql.gz
+*.tar.gz
+
+# Frontend dependencies & build output
+frontend/node_modules/
+frontend/dist/
+
+# Logs, editor & OS files
+*.log
+*.log.*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
